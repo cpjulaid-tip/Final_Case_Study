@@ -1,0 +1,8 @@
+QuezonCity ansible_host=192.168.10.1
+Makati     ansible_host=10.0.0.2
+Pasay      ansible_host=10.0.0.6
+
+[routers]
+QuezonCity
+Makati
+Pasay
