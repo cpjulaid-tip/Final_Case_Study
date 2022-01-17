@@ -1,0 +1,40 @@
+devices:
+  Makati:
+    connections:
+      cli:
+        ip: 10.0.0.2
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco123!
+        username: cisco
+      enable:
+        password: '%ASK{}'
+    os: ios
+    type: ios
+  Pasay:
+    connections:
+      cli:
+        ip: 10.0.0.6
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco123!
+        username: cisco
+      enable:
+        password: '%ASK{}'
+    os: ios
+    type: ios
+  QuezonCity:
+    connections:
+      cli:
+        ip: 192.168.10.1
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco123!
+        username: cisco
+      enable:
+        password: '%ASK{}'
+    os: ios
+    type: ios

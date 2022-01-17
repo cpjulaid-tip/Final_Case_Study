@@ -1,6 +1,6 @@
 Building configuration...
 
-Current configuration : 1716 bytes
+Current configuration : 1791 bytes
 !
 version 12.4
 service timestamps debug datetime msec
@@ -72,8 +72,7 @@ interface Serial0/0
  clock rate 2000000
 !
 interface FastEthernet0/1
- no ip address
- shutdown
+ ip address 192.168.20.1 255.255.255.0
  duplex auto
  speed auto
 !
@@ -115,10 +114,12 @@ interface Serial2/3
 router ospf 100
  log-adjacency-changes
  network 10.0.0.4 0.0.0.3 area 0
+ network 192.168.20.0 0.0.0.255 area 0
 !
 router rip
  version 2
  network 10.0.0.0
+ network 192.168.20.0
 !
 ip forward-protocol nd
 !
